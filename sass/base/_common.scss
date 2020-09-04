@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: $gray-color;
+  background: $background-body;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid violet; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.unmark {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

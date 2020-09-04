@@ -1,0 +1,44 @@
+.section-futures {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.h2-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    color: $black-color;
+  }
+  
+  .h3-title-features {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: $black-color;
+  }
+  
+  .p-title-features {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .futures-list {
+    display: flex;
+  }
+  
+  .futures-item {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+  }
+ 
+  .futures-icon {
+    height: 120px;
+    background-color: $background-team-box;
+    padding: 25px 100px;
+  }
