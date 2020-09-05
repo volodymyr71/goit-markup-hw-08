@@ -29,16 +29,64 @@
 }
 
 .futures-list {
-  // display: flex;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+ 
 }
 
 .futures-item {
-  // width: calc((100% - 30px * 3) / 4);
-  // margin-right: 30px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0px;
+    }
+
+  }
+
+  
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+  margin-bottom: 0;
+  }
 }
+
+
 
 .futures-icon {
   height: 120px;
   background-color: $background-team-box;
-  padding: 25px 100px;
+  text-align: center;
+  padding: 25px;
+
+  @include for-size(tablet-landscape) {
+    padding: 25px 100px;
+  }
+
+  @include for-size(desktop) {
+    padding: 25px 100px;
+  }
+
 }
