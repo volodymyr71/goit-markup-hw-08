@@ -1,15 +1,16 @@
+
 .clients-list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .clients-item {
-  width: calc((100% - 30px * 5) / 6);
-  margin-right: 30px;
+  // width: calc((100% - 30px * 5) / 6);
+  // margin-right: 30px;
 
-  &:nth-child(6n) {
-    margin-right: 0;
-  }
+  // &:nth-child(6n) {
+  //   margin-right: 0;
+  // }
 }
 
 .clients-link {

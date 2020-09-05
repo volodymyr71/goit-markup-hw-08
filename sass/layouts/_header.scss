@@ -1,3 +1,11 @@
+.header-hide {
+  display: none;
+  
+  @include for-size(tablet-landscape) {
+    display: flex;  
+  }
+}
+
 .page-header {
   padding: 25px 0;
 }

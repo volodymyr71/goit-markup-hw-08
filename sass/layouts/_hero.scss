@@ -18,14 +18,21 @@
   }
   
   .page-title {
-    margin-top: 0;
-    margin-bottom: 30;
+    font-family: "Roboto", sans-serif;;
+    font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.364;
+    font-size: 26px;
+    line-height: 1.615;
+/* or 162% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-color;
-    
+    margin-top: 0;
+    margin-bottom: 30;
+
+    @include for-size(desktop) {       
+    font-size: 44px;
+    line-height: 1.364;
+    }     
   }
