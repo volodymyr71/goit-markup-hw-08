@@ -1,20 +1,88 @@
 .hero {
     display: flex;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background: $background-footer;
+
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/img-hero-background.jpg);
-    max-width: 1600px;
-    height: 600px;
+      url(../images/background/img-hero-background-480.jpg);
+    max-width: 480px;
+    height: 400px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx)    
+    {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/img-hero-background-480@2x.jpg);
+      max-width: 480px;
+    height: 400px;     
+    }    
+
     background-repeat: no-repeat;
     background-position: top left, top right, center;
     margin-left: auto;
     margin-right: auto;
+
+    @include for-size(tablet-landscape) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/img-hero-background-768.jpg);
+    max-width: 768px;
+    height: 400px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx)    
+    {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/img-hero-background-768@2x.jpg);
+      max-width: 768px;
+    height: 400px;     
+    }    
+    }
+    
+    
+    @include for-size(desktop) {       
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/img-hero-background-1200.jpg);
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx)    
+    {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/img-hero-background-1200@2x.jpg);
+      max-width: 1600px;
+    height: 600px;     
+    }    
+      
+      }     
+
+
+
   }
   
   .page-title {
