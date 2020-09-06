@@ -13,17 +13,67 @@
   background: $background-footer;
 }
 
+// .footer-box {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: baseline;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
+
 .footer-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  // display: flex;
+  display: block;
+  flex-wrap: wrap;
+  text-align: center;  
+  // justify-content: space-between;
+  // align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.footer-item-2 {
+  margin-top: 60px;
+}
+
+
+.footer-subscribe {
+  display: block;
+  margin-top: 60px;
+}
+
+.footer-subscribe-form {
+  display: block;
+  
 }
 
 .footer-subscribe-input {
+
+  @include for-size(tablet-landscape) {
+    width: 450px;
+  }
+
+  @include for-size(desktop) {
+    width: 358px;
+  }
+
   width: 100%;
-  // width: 358px;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
