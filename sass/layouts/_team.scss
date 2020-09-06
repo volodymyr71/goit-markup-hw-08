@@ -10,6 +10,10 @@
 
 .team-box {
   background: $background-team-box;
+  @include for-size(desktop) {
+    margin-top: 60px;
+  }
+  
 }
 
 .p-title-team {

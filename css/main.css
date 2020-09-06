@@ -996,12 +996,18 @@ button.close:focus .close-icon {
 
 .h2-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
   color: #212121;
+}
+
+@media (min-width: 1200px) {
+  .h2-title {
+    margin-bottom: 50px;
+  }
 }
 
 .h3-title-features {
@@ -1136,6 +1142,12 @@ button.close:focus .close-icon {
 
 .team-box {
   background: #f5f4fa;
+}
+
+@media (min-width: 1200px) {
+  .team-box {
+    margin-top: 60px;
+  }
 }
 
 .p-title-team {
@@ -1291,6 +1303,8 @@ button.close:focus .close-icon {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1300,9 +1314,8 @@ button.close:focus .close-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1316,6 +1329,7 @@ button.close:focus .close-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1327,13 +1341,21 @@ button.close:focus .close-icon {
   }
 }
 
-.footer-item-2 {
-  margin-top: 60px;
+@media screen and (max-width: 767px) {
+  .footer-item-2 {
+    margin-top: 60px;
+  }
 }
 
 .footer-subscribe {
   display: block;
   margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    margin-top: 0px;
+  }
 }
 
 .footer-subscribe-form {
@@ -1356,7 +1378,7 @@ button.close:focus .close-icon {
 
 @media (min-width: 768px) {
   .footer-subscribe-input {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -1377,7 +1399,7 @@ button.close:focus .close-icon {
 }
 
 .address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contacts-link-footer {
