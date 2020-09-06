@@ -981,12 +981,30 @@ button.close:focus .close-icon {
   margin-right: 30px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mail-link-header {
+    margin-right: 0px;
+  }
+}
+
 .icon-header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts {
+    display: block;
+  }
 }
 
 .section-futures {
@@ -1350,6 +1368,13 @@ button.close:focus .close-icon {
 .footer-subscribe {
   display: block;
   margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe {
+    -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

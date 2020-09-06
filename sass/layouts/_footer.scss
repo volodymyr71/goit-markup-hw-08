@@ -75,11 +75,12 @@
 
 }
 
-
 .footer-subscribe {
   display: block;
   margin-top: 60px;
-
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: 450px;
+  }
   
 
   @media screen and (min-width: 1200px) {
@@ -89,7 +90,6 @@
 
 .footer-subscribe-form {
   display: block;
-  
 }
 
 .footer-subscribe-input {
