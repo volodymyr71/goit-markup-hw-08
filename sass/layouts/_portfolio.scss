@@ -23,9 +23,24 @@
   color: $white-color;
   margin: 0;
   letter-spacing: 0.03em;
-  padding: 65px 24px;
   /* display: none;  Приховані параграфи  */
   background-color: rgba(33, 150, 243, 0.9);
+
+  padding: 77px 24px;
+
+  @include for-size(tablet-landscape) {
+    padding: 49px 24px;
+  }
+  
+  @include for-size(desktop) {
+    padding: 65px 24px;
+  }
+
+
+
+
+
+
 }
 
 .portfolio-link {

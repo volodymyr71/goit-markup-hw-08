@@ -60,7 +60,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background/img-hero-background-1200.jpg);
+      url(../images/background/img-hero-background-1200.png);
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
@@ -74,7 +74,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background/img-hero-background-1200@2x.jpg);
+      url(../images/background/img-hero-background-1200@2x.png);
       max-width: 1600px;
     height: 600px;     
     }    
@@ -97,7 +97,7 @@
     text-transform: uppercase;
     color: $white-color;
     margin-top: 0;
-    margin-bottom: 30;
+    margin-bottom: 30px;
 
     @include for-size(desktop) {       
     font-size: 44px;

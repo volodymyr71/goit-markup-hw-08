@@ -963,8 +963,8 @@ button.close:focus .close-icon {
 
 @media (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/img-hero-background-1200.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/img-hero-background-1200.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/img-hero-background-1200.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/img-hero-background-1200.png);
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
@@ -974,8 +974,8 @@ button.close:focus .close-icon {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/img-hero-background-1200@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/img-hero-background-1200@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/img-hero-background-1200@2x.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/img-hero-background-1200@2x.png);
     max-width: 1600px;
     height: 600px;
   }
@@ -993,7 +993,7 @@ button.close:focus .close-icon {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -1533,9 +1533,15 @@ button.close:focus .close-icon {
   color: #ffffff;
   margin: 0;
   letter-spacing: 0.03em;
-  padding: 65px 24px;
   /* display: none;  Приховані параграфи  */
   background-color: rgba(33, 150, 243, 0.9);
+  padding: 77px 24px;
+}
+
+@media (min-width: 1200px) {
+  .p-portfolio-long {
+    padding: 65px 24px;
+  }
 }
 
 .portfolio-link {
