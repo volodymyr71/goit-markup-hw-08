@@ -1538,6 +1538,12 @@ button.close:focus .close-icon {
   padding: 77px 24px;
 }
 
+@media (min-width: 768px) {
+  .p-portfolio-long {
+    padding: 49px 24px;
+  }
+}
+
 @media (min-width: 1200px) {
   .p-portfolio-long {
     padding: 65px 24px;
