@@ -42,6 +42,10 @@
   @include for-size(tablet-portrait) {
     width: 450px;
   height: 609px;
+  transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+  left: 50%;
+
   }
   
   @include for-size(tablet-landscape) {
@@ -59,12 +63,7 @@
   left: 0;
   
 
-  @include for-size(tablet-portrait) {
-    transform: translate(-50%, -50%) scale(1);
-    top: 50%;
-  left: 50%;
-
-  }
+ 
 
   // transform: translate(-50%, -50%) scale(1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
