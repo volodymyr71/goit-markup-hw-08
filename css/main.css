@@ -774,11 +774,10 @@ button.close:focus .close-icon {
   padding: 40px;
   position: absolute;
   width: 100%;
+  overflow-y: scroll;
   background-color: white;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  top: 0;
+  left: 0;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -806,6 +805,15 @@ button.close:focus .close-icon {
   .modal {
     width: 528px;
     height: 581px;
+  }
+}
+
+@media (min-width: 480px) {
+  .modal {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
   }
 }
 
