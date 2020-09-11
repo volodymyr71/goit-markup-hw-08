@@ -28,9 +28,17 @@
 
   padding: 77px 24px;
 
+  @media screen and (max-width: 369px) {
+    padding: 49px 24px 149px 24px;
+    font-size: 16px;
+  line-height: 1.556;
+  }
+
   @include for-size(tablet-landscape) {
     padding: 49px 24px;
+    
   }
+
   
   @include for-size(desktop) {
     padding: 65px 24px;

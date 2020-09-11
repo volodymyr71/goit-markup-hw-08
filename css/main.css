@@ -1577,6 +1577,14 @@ button.close:focus .close-icon {
   padding: 77px 24px;
 }
 
+@media screen and (max-width: 369px) {
+  .p-portfolio-long {
+    padding: 49px 24px 149px 24px;
+    font-size: 16px;
+    line-height: 1.556;
+  }
+}
+
 @media (min-width: 768px) {
   .p-portfolio-long {
     padding: 49px 24px;
