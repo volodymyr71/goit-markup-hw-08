@@ -319,27 +319,23 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    outline: 2px solid yellow;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    outline: 2px solid green;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
-    outline: 2px solid violet;
   }
 }
 
@@ -746,6 +742,7 @@ button.close:focus .close-icon {
 
 .overlay {
   position: absolute;
+  opacity: 0;
   top: 0;
   left: 0;
   -webkit-transform: translateY(100%);
@@ -1604,6 +1601,7 @@ button.close:focus .close-icon {
 .portfolio-link:focus .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .produkt-thumb {

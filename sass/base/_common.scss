@@ -15,21 +15,21 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
+  // outline: 2px solid red;
 
   @include for-size(tablet-portrait) {
     width: 480px;
-    outline: 2px solid yellow;
+    // outline: 2px solid yellow;
   }
 
   @include for-size(tablet-landscape) {
     width: 768px;
-    outline: 2px solid green;
+    // outline: 2px solid green;
   }
 
   @include for-size(desktop) {
     width: 1200px;
-    outline: 2px solid violet;
+    // outline: 2px solid violet;
   }
 }
 
