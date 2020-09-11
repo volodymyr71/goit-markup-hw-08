@@ -13,11 +13,77 @@
   </head>
   <body>
     <header class="page-header">
+      <!-- Мобільний хеадер  -->
       <div class="container logo-mobile-enable">
         <a href="index.html" class="logo"
-            >Web <span class="logo-span-black">Studio</span></a
+          >Web <span class="logo-span-black">Studio</span></a
+        >
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
+            <use
+              class="icon-cross"
+              href="./images/sprite-2.svg#icon-close_40px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/sprite-2.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button>
+        <!-- Мобільне меню спливаюче -->
+        <div class="mobile-menu" data-menu>          
+          <ul class="mobile-site unmark">
+            <li class="item">
+              <a href="./index.html" class="menu-link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="menu-link menu-link-active-mobile">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="menu-link">Контакты</a></li>
+          </ul>
+
+          <ul class="mobile-auth unmark">
+            <li class="mail-link-header-mobile">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-link mail-link-header-mobile"
+              >
+                <svg class="icon-header" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-envelope-hover"></use>
+                </svg>
+
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="tel-link-header-mobile">
+              <a
+                href="tel:+380961111111"
+                class="contacts-link tel-link-header-mobile"
+              >
+                <svg class="icon-header" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone-hover"></use>
+                </svg>
+
+                +38 096 111 11 11
+              </a>
+            </li>
+            
+          </ul>
+        </div>
       </div>
+      <!-- Кінець мобільного меню -->
+
+      <!-- Меню для планшета/десктопа -->
       <div class="container flexbox header-hide">
         <nav class="navigation">
           <a href="index.html" class="logo"
@@ -36,30 +102,33 @@
           </ul>
         </nav>
         <div>
-        <ul class="unmark header-contacts">
-          <li>
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts-link mail-link-header"
-            >
-              <svg class="icon-header" width="16" height="12">
-                <use href="./images/sprite.svg#icon-envelope-hover"></use>
-              </svg>
+          <ul class="unmark header-contacts">
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-link mail-link-header"
+              >
+                <svg class="icon-header" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-envelope-hover"></use>
+                </svg>
 
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contacts-link mail-link-header">
-              <svg class="icon-header" width="10" height="16">
-                <use href="./images/sprite.svg#icon-smartphone-hover"></use>
-              </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="tel:+380961111111"
+                class="contacts-link mail-link-header"
+              >
+                <svg class="icon-header" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone-hover"></use>
+                </svg>
 
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </div>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- PORTFOLIO -->
@@ -487,5 +556,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
